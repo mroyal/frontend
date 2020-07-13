@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-server": "json-server --watch data/customers.json"
+    "start-server": "json-server --watch data/customers.json --routes data/routes.json"
   },
   "keywords": [],
   "author": "",
