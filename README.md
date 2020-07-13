@@ -8,14 +8,24 @@ To install the API server and its dependencies, run this command:
 
 ```npm install```
 
-## Usage
+## Start the Server
 
 To run the server, run this command: 
 
 ```npm run start-server```
 
+The output should display the URL of the running server (e.g. http//localhost:3000).
+
+## Usage
+
 Once the server is running, you can access the list of customers at this URL:
 
-    http://localhost:3000/customers/
+Show customers : `GET /api/customers/`
 
-See the json-server documentation to learn how to filter the data and query individual customers.
+Retrieve a customer by ID : `GET /api/customers/:id`
+
+Retrieve a customer by email : `GET /api/customers/?email=:email`
+
+Filter users by partial email : `GET /api/customers/?email_like=:partial_email`
+
+See the json-server documentation for a full usage guide. 
