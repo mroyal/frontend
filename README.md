@@ -18,7 +18,7 @@ The output should display the URL of the running server (e.g. http//localhost:30
 
 ## Usage
 
-Once the server is running, you can access the list of customers at this URL:
+Once the server is running, you can access the customers using the server's API endpoints. For example:
 
 Show customers : `GET /api/customers/`
 
