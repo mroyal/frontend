@@ -1,4 +1,11 @@
 {
+  "templates": [
+    {
+      "id": 1,
+      "name": "Purchase Thank-You Template",
+      "content": "<p>Dear {{customer.firstname}} {{customer.lastname}},</p>\n\n<p>Thank you for your recent order! You've purchased:</p>\n\n<ul>\n    {{#each customer.order.products as |product|}}\n    <li>\n        {{product.product_name}}: {{product.product_desc}}\n    </li>\n    {{/each}}\n</ul>\n"
+    }
+  ],
   "customers": [
     {
       "id": "2a945d4ed020",

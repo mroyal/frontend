@@ -1,6 +1,6 @@
 # Frontend Templates and Mock Customer Data
  
-This repo contains a mock API server, which will serve data to your frontend app.
+This repo contains a mock API server, which will serve customers and HTML templates to your frontend app.
 
 ## Installation
 
@@ -18,14 +18,22 @@ The output should display the URL of the running server (e.g. http//localhost:30
 
 ## Usage
 
-Once the server is running, you can access the customers using the server's API endpoints. For example:
+Once the server is running, you can create, retrieve, update, and delete customers and HTML templates using the server's API endpoints. For example:
 
-Show customers : `GET /api/customers/`
+Retrieve templates : `GET /api/templates`
+
+Retrieve a template by ID : `GET /api/templates/:id`
+
+Save a new template: `POST /api/templates`
+
+Update an existing template: `PUT /api/templates/:id` 
+
+Retrieve customers : `GET /api/customers`
 
 Retrieve a customer by ID : `GET /api/customers/:id`
 
-Retrieve a customer by email : `GET /api/customers/?email=:email`
+Retrieve a customer by email : `GET /api/customers?email=:email`
 
-Filter users by partial email : `GET /api/customers/?email_like=:partial_email`
+Filter users by partial email : `GET /api/customers?email_like=:partial_email`
 
 See the json-server documentation for a full usage guide. 
