@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Purchase Thank-You Template",
-      "content": "<p>Dear {{customer.firstname}} {{customer.lastname}},</p>\n\n<p>Thank you for your recent order! You've purchased:</p>\n\n<ul>\n    {{#each customer.order.products as |product|}}\n    <li>\n        {{product.product_name}}: {{product.product_desc}}\n    </li>\n    {{/each}}\n</ul>\n"
+      "content": "<p>Dear {{customer.firstname}} {{customer.lastname}},</p>\n\n<p>Thank you for your recent order! You've purchased:</p>\n\n<ul>\n    {% for product in customer.last_order.products %}\n    <li>\n        <strong>{{product.product_name}}</strong><br>\n        {{product.product_desc}}\n    </li>\n    {% endfor %}\n</ul>"
     }
   ],
   "customers": [
